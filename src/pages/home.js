@@ -39,9 +39,9 @@ export default class HomeScreen extends Component {
                     </Text>
                 </View>
                 
-                <TouchableOpacity style={styles.startAnimation} onPress={() => navigate('SecondPage')}>
+                <TouchableOpacity style={styles.startAnimation} onPress={() => navigate('Principal')}>
                     <Text style={styles.textAnimation}>
-                        Next Page
+                        Ir para o Menu
                     </Text>
                 </TouchableOpacity>
             </View>
@@ -63,9 +63,10 @@ const styles = StyleSheet.create({
     },
     welcome:{
         fontSize:70,
-        fontWeight:'bold',
+        fontFamily:'GothamBold',
+        
         margin:20,
-        marginTop:-50
+        marginTop:-50,
     },
     startAnimation: {
         height: 50,
@@ -79,6 +80,7 @@ const styles = StyleSheet.create({
     },
     textAnimation: {
         color: '#fff',
+        fontFamily:'GothamBold',
         fontSize: 25,
         padding: 20
     },
@@ -87,13 +89,14 @@ const styles = StyleSheet.create({
         width:400,
         borderRadius:20,
         borderWidth:3,
-        borderColor:'#9013fe'
+        borderColor:'#9013fe',
+        
     },
     txtWelcome:{
         padding:20,
         fontSize:20,
+        fontFamily:'GothamBold',
         alignSelf:'center',
-        fontWeight:'bold'
     }
 
 })

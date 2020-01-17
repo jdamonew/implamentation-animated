@@ -29,9 +29,11 @@ export default class SecondPage extends Component{
                 </TouchableOpacity>
 
 
-                <TouchableOpacity style={styles.floatButton} onPress={()=>navigate('Home')}>
+                <TouchableOpacity style={styles.floatButtonLeft} onPress={()=>navigate('Principal')}>
                     <Icon name="arrow-left" size={30} color={'#fff'}/>
                 </TouchableOpacity>
+
+    
             </View>
         );
     }
@@ -44,12 +46,8 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         alignItems:'center',
         backgroundColor:'#ddd',
-        borderBottomColor:'#e1b12c',
-        borderBottomWidth:3,
-        borderTopColor:'#e1b12c',
-        borderTopWidth:3
     },
-    floatButton:{
+    floatButtonLeft:{
         backgroundColor:'#fbc531',
         width:80, 
         height:80,
@@ -58,10 +56,11 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         position:'absolute',
         bottom:40, 
-        right:40,
+        left:40,
         borderWidth:2,
         borderColor:'#e1b12c'
     },
+    
     startAnimation:{
        
         height:50,
@@ -75,6 +74,7 @@ const styles = StyleSheet.create({
     textAnimation:{
         color:'#fff',
         fontSize:25,
+        fontFamily:'GothamBold',
         padding:20
     },
     containerText:{
@@ -87,9 +87,9 @@ const styles = StyleSheet.create({
     },
     txtWelcome:{
         padding:20,
-        fontSize:20,
+        fontSize:19,
         alignSelf:'center',
-        fontWeight:'bold'
+        fontFamily:'GothamBold'
     }
     
 
