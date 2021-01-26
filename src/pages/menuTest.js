@@ -45,7 +45,7 @@ class Menu extends Component {
                                         style={{width:130, height:130}}
                                     />
 
-                                    <View style={{ width: '100%', height: '35%', backgroundColor: '#16a085', justifyContent: 'flex-end', borderBottomEndRadius: 20 }}>
+                                    <View style={{ width: '100%', height: '30s%', backgroundColor: '#16a085', justifyContent: 'flex-end', borderBottomEndRadius: 20 }}>
                                         <Text style={styles.titleBanner}>{item.description}</Text>
                                     </View>
 
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     },
     titleBanner: {
         color: '#fff',
-        fontSize: 30,
+        fontSize: 25,
         margin: 10,
         fontFamily: 'GothamBold'
     }

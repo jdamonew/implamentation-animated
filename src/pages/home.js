@@ -2,11 +2,23 @@
 import React, { Component } from 'react';
 import { Text, View, StyleSheet, TouchableOpacity, StatusBar} from 'react-native';
 import LottieView from 'lottie-react-native';
+import OneSignal from 'react-native-onesignal'
+//ecc499c8-b1af-4b7d-9adc-4eada03f8b9d
 
 export default class HomeScreen extends Component {
     static navigationOptions = {
         headerShown: false,
     };
+
+    componentDidMount(){
+
+        OneSignal.setAppId('ecc499c8-b1af-4b7d-9adc-4eada03f8b9d')
+        OneSignal.setLogLevel(6, 0);
+        OneSignal.promptForPushNotificationsWithUserResponse(response => {
+            this.OSLog("Prompt response:", response);
+        });
+    }
+
 
     render() {
 

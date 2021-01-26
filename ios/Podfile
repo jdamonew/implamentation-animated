@@ -38,6 +38,8 @@ target 'implamentation' do
 
   pod 'react-native-safe-area-context', :path => '../node_modules/react-native-safe-area-context'
 
+  pod 'RNCMaskedView', :path => '../node_modules/@react-native-community/masked-view'
+
   target 'implamentationTests' do
     inherit! :search_paths
     # Pods for testing
